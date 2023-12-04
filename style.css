@@ -1,3 +1,17 @@
 * {
     background-color: red;
+    text-align: center;
+}
+
+img {
+    transition: transform 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.pop {
+    transform: scale(1.2);
+}
+
+.jumpingImage1 {
+    padding-bottom: 20rem;
 }
