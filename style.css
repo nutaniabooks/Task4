@@ -1,8 +1,18 @@
 * {
     background-color: red;
     text-align: center;
+
 }
 
+h1 {
+    font-family: "press Start 2p", "sans-serif";
+    font-size: 3rem;
+    padding-top: 5rem;
+}
+
+h2 {
+    font-style: oblique;
+}
 img {
     transition: transform 0.5s ease-in-out;
     cursor: pointer;
@@ -12,6 +22,6 @@ img {
     transform: scale(1.2);
 }
 
-.jumpingImage1 {
+.Image {
     padding-bottom: 20rem;
 }
