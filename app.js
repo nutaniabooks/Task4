@@ -5,13 +5,21 @@ const image0 = document.getElementById('rock');
 const image1 = document.getElementById('paper');
 const image2 = document.getElementById('scissors');
 
+let displaymsg1 = document.getElementById('output1');
+let displaymsg2 = document.getElementById('output2');
+let displaymsg3 = document.getElementById('output3');
+
+
 image0.addEventListener('click', function () {
+    displaymsg1.innerHTML = "You picked rock";
+    let userPicked = Math.floor(Math.random)()* 3);
+    if (UserPicked === computerPicked) {
+        displaymsg3.innerHTML= "It's a tie";
+}
 
 image1.addEventListener('click', function () {
-    
 }
-}
-
+image2.addEventListener('')
 
 
 function playerGame(playerChoice) {
@@ -20,7 +28,7 @@ function playerGame(playerChoice) {
     let result;
 
     if (UserPicked === computerPicked) {
-        result = "It's a tie";
+        displaymsg3.innerHTML= "It's a tie";
     }
     
     else if (
@@ -37,9 +45,6 @@ function playerGame(playerChoice) {
     = `You chose ${userPicked} . Computer picked ${computerpicked}. ${result}` ;
 }
 
-let msg1 = document.getElementById('output1');
-let msg2 = document.getElementById('output2');
-let msg3 = document.getElementById('output3');
 
 
 //when user clicks on an image the computer will display what the user choose
