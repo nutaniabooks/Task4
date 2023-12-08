@@ -25,6 +25,12 @@ function init() {
 //     image.src = "images/scissors_image.png";
 // }
 
+rock.addEventListener('click', function () {
+    
+}
+
+
+
 function playerGame(playerChoice) {
     let choices = ['rock', 'paper', 'scissors'];
     let computerPicked = choices[Math.floor(Math.random() * 3)];
