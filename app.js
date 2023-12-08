@@ -1,32 +1,15 @@
 //let user pick from the three options that have been uploaded form the HTML.
 
-document.onload = init;
-function init() {
-    const image0 = document.getElementById('rock');
-    image0.onclick = showImageZero;
-   const image1 = document.getElementById('paper');
-    image1.onclick = showImageOne;
-    const image2 = document.getElementById('scissors');
-    image2.onclick = showImagetwo;
-}
 
-// function showImageRock () {
-//     const image = document.getElementById('rock');
-//     image.src = "images/Rock_image.png";
-// }
+const image0 = document.getElementById('rock');
+const image1 = document.getElementById('paper');
+const image2 = document.getElementById('scissors');
 
-// function showImagePaper () {
-//     const image = document.getElementById('paper');
-//     image.src = "images/paper_image.png";
-// }
+image0.addEventListener('click', function () {
 
-// function showImageScissors () {
-//     const image = document.getElementById('scissors');
-//     image.src = "images/scissors_image.png";
-// }
-
-rock.addEventListener('click', function () {
+image1.addEventListener('click', function () {
     
+}
 }
 
 
