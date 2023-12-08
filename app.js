@@ -1,4 +1,4 @@
-//let user pick from the three
+//let user pick from the three options that have been uploaded form the HTML.
 
 document.onload = init;
 function init() {
@@ -50,11 +50,13 @@ function playerGame(playerChoice) {
 
 
 //when user clicks on an image the computer will display what the user choose
-
 // In the generator of whether user or computer picks one or another then there needs to be
 // a place where it can generate a random generator. 
 //then this will trigger the computer to generate its own choice
-// then it will decided on t
+// then it will decided on whether the user or computer won. And if there is a tie the computer will display a log box with a its a tie.
+// which  will then prompt the user to click ok. taking it back to the home page. 
+
+
 
 
 
@@ -72,7 +74,9 @@ function playerGame(playerChoice) {
 //play again
 
 
-//score board will mark place a tally mark on either computer or user board
+//*******score board will mark place a tally mark on either computer or user board***
+
+//This would be a container with a numbers generating on if the user won it would show. etc. 
 //arrow on the right hand side
 
 //create a variable one for computer or users score
