@@ -48,6 +48,10 @@ function playerGame(playerChoice) {
     = `You chose ${userPicked} . Computer picked ${computerpicked}. ${result}` ;
 }
 
+let msg1 = document.getElementById('output1');
+let msg2 = document.getElementById('output2');
+let msg3 = document.getElementById('output3');
+
 
 //when user clicks on an image the computer will display what the user choose
 // In the generator of whether user or computer picks one or another then there needs to be
