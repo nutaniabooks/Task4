@@ -1,24 +1,42 @@
 //let user pick from the three options that have been uploaded form the HTML.
 
+let userChoice = document.getElementById('user-choice');
+let computerChoice = document.getElementById('computer-choice');
+let resultShown = document.getElementById('result');
+
+
+console.log("clickedOnImage");
+
 
 const image0 = document.getElementById('rock');
 const image1 = document.getElementById('paper');
 const image2 = document.getElementById('scissors');
 
-let displaymsg1 = document.getElementById('output1');
-let displaymsg2 = document.getElementById('output2');
-let displaymsg3 = document.getElementById('output3');
-
 
 image0.addEventListener('click', function () {
+    console.log()
+});
+
+    console.log("ClickedOnimage"); 
     displaymsg1.innerHTML = "You picked rock";
-    let userPicked = Math.floor(Math.random)()* 3);
-    if (UserPicked === computerPicked) {
-        displaymsg3.innerHTML= "It's a tie";
-}
+    console.log("clickedOnImage");
+    let userPicked = Math.floor(Math.random()* 3);
+    console.log("clickedOnImage");
+    // if (UserPicked === computerPicked) {
+    //     displaymsg3.innerHTML= "It's a tie";
+    // else if 
+    //     (userPicked === 'rock' && computerPicked === 'scissors') ||
+    //     (userPicked === 'scissors' && computerPicked === "paper") ||
+    //     (userPicked === 'paper' && computerPicked === "rock")
+    // ) {
+    //     result = "You win!";
+    // }   else {
+    //     result = "You lose!";
+    // }
+// }
 
 image1.addEventListener('click', function () {
-}
+});
 image2.addEventListener('')
 
 
@@ -26,24 +44,23 @@ function playerGame(playerChoice) {
     let choices = ['rock', 'paper', 'scissors'];
     let computerPicked = choices[Math.floor(Math.random() * 3)];
     let result;
-
-    if (UserPicked === computerPicked) {
-        displaymsg3.innerHTML= "It's a tie";
-    }
-    
-    else if (
-        (userPicked === 'rock' && computerPicked === 'scissors') ||
-        (userPicked === 'scissors' && computerPicked === "paper") ||
-        (userPicked === 'paper' && computerPicked === "rock")
-    ) {
-        result = "You win!";
-    }   else {
-        result = "You lose!";
-    }
-
-    document.getElementById ('result').innerText
-    = `You chose ${userPicked} . Computer picked ${computerpicked}. ${result}` ;
 }
+    // if (userPickedserPicked === computerPicked) {
+    //     displaymsg3.innerHTML= "It's a tie";
+    
+    // }   else if (userPicked === 'rock' && computerPicked === 'scissors') ||
+    // (userPicked === 'scissors' && computerPicked === "paper") ||
+//     // (userPicked === 'paper' && computerPicked === "rock")
+//     // {
+//         result = "You win!";
+
+//     }   else {
+//         result = "You lose!";
+//     }
+
+//     document.getElementById ('result').innerText
+//     = `You chose ${userPicked} . Computer picked ${computerpicked}. ${result}` ;
+// }
 
 
 
@@ -77,6 +94,4 @@ function playerGame(playerChoice) {
 //This would be a container with a numbers generating on if the user won it would show. etc. 
 //arrow on the right hand side
 
-//create a variable one for computer or users score
-
-//
+//create a variable one for computer or users score//
