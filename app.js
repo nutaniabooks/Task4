@@ -1,90 +1,88 @@
-//let user pick from the three options that have been uploaded form the HTML.
+//let user pick from the three options 
 
-let userChoice = document.getElementById('user-choice');
+let userChoiceDisplay = document.getElementById('user-choice');
 let computerChoice = document.getElementById('computer-choice');
 let resultShown = document.getElementById('result');
 
+// console.log(`${userChoice}`)
 
-console.log("clickedOnImage");
+const rock = document.getElementById('rock');
+const paper = document.getElementById('paper');
+const scissor = document.getElementById('scissor');
 
-
-const image0 = document.getElementById('rock');
-const image1 = document.getElementById('paper');
-const image2 = document.getElementById('scissors');
-
-
-image0.addEventListener('click', function () {
-    console.log()
-});
-
-    console.log("ClickedOnimage"); 
-    displaymsg1.innerHTML = "You picked rock";
-    console.log("clickedOnImage");
-    let userPicked = Math.floor(Math.random()* 3);
-    console.log("clickedOnImage");
-    // if (UserPicked === computerPicked) {
-    //     displaymsg3.innerHTML= "It's a tie";
-    // else if 
-    //     (userPicked === 'rock' && computerPicked === 'scissors') ||
-    //     (userPicked === 'scissors' && computerPicked === "paper") ||
-    //     (userPicked === 'paper' && computerPicked === "rock")
-    // ) {
-    //     result = "You win!";
-    // }   else {
-    //     result = "You lose!";
-    // }
-// }
-
-image1.addEventListener('click', function () {
-});
-image2.addEventListener('')
-
-
-function playerGame(playerChoice) {
-    let choices = ['rock', 'paper', 'scissors'];
+rock.addEventListener('click', () => {
+    const userChoice = 'rock';
+    userChoiceDisplay.innerHTML = "Rock";
+    let choices = ['rock', 'paper', 'scissor'];
     let computerPicked = choices[Math.floor(Math.random() * 3)];
-    let result;
-}
-    // if (userPickedserPicked === computerPicked) {
-    //     displaymsg3.innerHTML= "It's a tie";
-    
-    // }   else if (userPicked === 'rock' && computerPicked === 'scissors') ||
-    // (userPicked === 'scissors' && computerPicked === "paper") ||
-//     // (userPicked === 'paper' && computerPicked === "rock")
-//     // {
-//         result = "You win!";
+    computerChoice.innerHTML = computerPicked;
 
-//     }   else {
-//         result = "You lose!";
-//     }
+    if (userChoice === "rock" && computerPicked === "paper") {
+        resultShown.innerHTML = "You lost.";
+    }
+    if (userChoice === "rock" && computerPicked === "scissor") {
+        resultShown.innerHTML = "You won!";
+    }
+    if (userChoice === "rock" && computerPicked === "rock") {
+        resultShown.innerHTML = "Its a tie.";
+    }
+});
 
-//     document.getElementById ('result').innerText
-//     = `You chose ${userPicked} . Computer picked ${computerpicked}. ${result}` ;
-// }
+paper.addEventListener('click', () => {
+    const userChoice = 'paper';
+    userChoiceDisplay.innerHTML = "Paper";
+    let choices = ['rock', 'paper', 'scissor'];
+    let computerPicked = choices[Math.floor(Math.random() * 3)];
+    computerChoice.innerHTML = computerPicked;
+
+    if (userChoice === "paper" && computerPicked === "paper") {
+    resultShown.innerHTML = "Its a tie.";
+    }
+    if (userChoice === "paper" && computerPicked === "scissor") {
+    resultShown.innerHTML = "You lost.";
+    }
+    if (userChoice === "paper" && computerPicked === "rock") {
+    resultShown.innerHTML = "You won!";
+    }
+});
+
+scissor.addEventListener('click', () => {
+    const userChoice = 'scissor';
+    userChoiceDisplay.innerHTML = "Scissor";
+    let choices = ['rock', 'paper', 'scissor'];
+    let computerPicked = choices[Math.floor(Math.random() * 3)];
+    computerChoice.innerHTML = computerPicked;
+
+    if (userChoice === "scissor" && computerPicked === "paper") {
+    resultShown.innerHTML = "You won!";
+    }
+    if (userChoice === "scissor" && computerPicked === "scissor") {
+    resultShown.innerHTML = "Its a tie.";
+    }
+    if (userChoice === "scissor" && computerPicked === "rock") {
+    resultShown.innerHTML = "You lost.";
+    }
+});
 
 
 
-//when user clicks on an image the computer will display what the user choose
-// In the generator of whether user or computer picks one or another then there needs to be
-// a place where it can generate a random generator. 
-//then this will trigger the computer to generate its own choice
-// then it will decided on whether the user or computer won. And if there is a tie the computer will display a log box with a its a tie.
-// which  will then prompt the user to click ok. taking it back to the home page. 
+// //when user clicks on an image the computer will display what the user choose
+// // In the generator of whether user or computer picks one or another then there needs to be
+// // a place where it can generate a random generator. 
+// //then this will trigger the computer to generate its own choice
+// // then it will decided on whether the user or computer won. And if there is a tie the computer will display a log box with a its a tie.
+// // which  will then prompt the user to click ok. taking it back to the home page. 
 
 
+// //display the users choice on screen
 
 
+// //calculate the option for the computer
+// //decide who won based on users choice and computer choice
 
-
-//display the users choice on screen
-
-
-//calculate the option for the computer
-//decide who won based on users choice and computer choice
-
-//inputs the answer
-//computer calculates an answer
-//results on who won?
+// //inputs the answer
+// //computer calculates an answer
+// //results on who won?
 
 //play again
 
