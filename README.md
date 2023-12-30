@@ -8,8 +8,9 @@ I used both HTML, CSS, and Javascript for this game of Rock, Paper, Scissors!
 
 Summary:
 
-To play as many times you want with the computer
-There is a scoreboard to keep count on how many times you won and how many times the computer won
+To play as many times you want with the computer.
+
+There is a Scoreboard to keep count of how many times you won and how many times the computer won
 
 Author:
 
