@@ -1,5 +1,8 @@
 //let user pick from the three options 
 
+let userScore = 0;
+let computerScore = 0;
+
 let userChoiceDisplay = document.getElementById('user-choice');
 let computerChoice = document.getElementById('computer-choice');
 let resultShown = document.getElementById('result');
@@ -18,14 +21,17 @@ rock.addEventListener('click', () => {
     computerChoice.innerHTML = computerPicked;
 
     if (userChoice === "rock" && computerPicked === "paper") {
+        computerScore++;
         resultShown.innerHTML = "You lost.";
     }
     if (userChoice === "rock" && computerPicked === "scissor") {
-        resultShown.innerHTML = "You won!";
+        userScore++;
+        resultShown.innerHTML = "You won!"; 
     }
     if (userChoice === "rock" && computerPicked === "rock") {
         resultShown.innerHTML = "Its a tie.";
     }
+    updateScoreboard();
 });
 
 paper.addEventListener('click', () => {
@@ -36,14 +42,17 @@ paper.addEventListener('click', () => {
     computerChoice.innerHTML = computerPicked;
 
     if (userChoice === "paper" && computerPicked === "paper") {
-    resultShown.innerHTML = "Its a tie.";
+        resultShown.innerHTML = "Its a tie.";
     }
     if (userChoice === "paper" && computerPicked === "scissor") {
-    resultShown.innerHTML = "You lost.";
+        computerScore++;
+        resultShown.innerHTML = "You lost.";
     }
     if (userChoice === "paper" && computerPicked === "rock") {
-    resultShown.innerHTML = "You won!";
+        userScore++;    
+        resultShown.innerHTML = "You won!";
     }
+    updateScoreboard();
 });
 
 scissor.addEventListener('click', () => {
@@ -54,17 +63,23 @@ scissor.addEventListener('click', () => {
     computerChoice.innerHTML = computerPicked;
 
     if (userChoice === "scissor" && computerPicked === "paper") {
-    resultShown.innerHTML = "You won!";
+        userScore++;
+        resultShown.innerHTML = "You won!";
     }
     if (userChoice === "scissor" && computerPicked === "scissor") {
-    resultShown.innerHTML = "Its a tie.";
+        resultShown.innerHTML = "Its a tie.";
     }
     if (userChoice === "scissor" && computerPicked === "rock") {
-    resultShown.innerHTML = "You lost.";
+        computerScore++;
+        resultShown.innerHTML = "You lost.";
     }
+    updateScoreboard();
 });
 
-
+function updateScoreboard() {
+    document.getElementById("userScore").textContent = userScore;
+    document.getElementById("computerScore").textContent = computerScore;
+}
 
 // //when user clicks on an image the computer will display what the user choose
 // // In the generator of whether user or computer picks one or another then there needs to be
